@@ -44,8 +44,10 @@ ul{
 
 /*---------NAVIGATION BAR---------*/
 .navbar {
+    position: fixed;
     background: var(--dark-blue);
     padding: 10px;
+    width: 100%;
 }
 
 .navbar .container {
@@ -70,16 +72,17 @@ ul{
 
 /*---------HOME---------*/
 .home {
-    padding: 40px, 0px;
+    padding: 100px;
     background: 
         linear-gradient(to right, var(--pale-yellow) 50%, transparent 50%), 
         url('../images/coverimg.png');
+    background-repeat: no-repeat;
     background-position: left top, right top;
 }
 
 .home .social-links ul {
     display: flex;
-    padding: 20px 0px;
+    padding: 100px 0px;
 }
 
 .home ul li a {
@@ -89,6 +92,13 @@ ul{
 
 
 /*---------UTILITY CLASSES---------*/
+.container-full {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 150px 0px;
+}
+
 .container {
     max-width: 1700px;
     margin: 0 auto;
@@ -119,7 +129,7 @@ ul{
 .text-xl{
     font-size: 3rem;
     font-weight: 300;
-    margin: 40px 0 20px;
+    margin: 50px 0 20px;
 }
 
 .text-lg{
