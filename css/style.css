@@ -78,6 +78,8 @@ ul{
         url('../images/coverimg.png');
     background-repeat: no-repeat;
     background-position: left top, right top;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .home .social-links ul {
@@ -92,13 +94,6 @@ ul{
 
 
 /*---------UTILITY CLASSES---------*/
-.container-full {
-    width: 100%;
-    min-height: 100vh;
-    margin: 0 auto;
-    padding: 150px 0px;
-}
-
 .container {
     max-width: 1700px;
     margin: 0 auto;
