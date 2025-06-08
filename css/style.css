@@ -5,9 +5,9 @@
 }
 
 :root {
-    --dark-blue: #2a425b;
-    --lighter-blue: #547792;
     --pale-yellow: #fffde7;
+    --black: #000000;
+    --mint-green: #00ff94;
 }
 
 
@@ -15,14 +15,14 @@
 /*------------------------------*/
 a {
     text-decoration: none;
-    color: #333;
+    color: var(--pale-yellow);
 }
 
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background: var(--pale-yellow);
+    color: var(--pale-yellow);
 }
 
 img {
@@ -30,7 +30,7 @@ img {
 }
 
 p {
-    color: #545454;
+    color: var(--pale-yellow);
     font-weight: normal;
     font-size: 1.1rem;
     margin: 10px 0 5px;
@@ -45,8 +45,8 @@ ul{
 /*---------NAVIGATION BAR---------*/
 .navbar {
     position: fixed;
-    background: var(--dark-blue);
-    padding: 10px;
+    background: var(--black);
+    padding: 5px;
     width: 100%;
 }
 
@@ -61,7 +61,13 @@ ul{
 }
 
 .navbar ul li a {
+    margin-left: 50px;
     color: var(--pale-yellow);
+}
+
+.navbar ul li a:hover {
+    font-weight: 600;
+    color: var(--mint-green);
 }
 
 .navbar ul li a i {
@@ -74,12 +80,12 @@ ul{
 .home {
     padding: 100px;
     background: 
-        linear-gradient(to right, var(--pale-yellow) 50%, transparent 50%), 
-        url('../images/coverimg.png');
+        linear-gradient(to right, var(--black) 60%, transparent), 
+        url('../images/linesofcode-haroldvasquez.jpg');
     background-repeat: no-repeat;
     background-position: left top, right top;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .home .social-links ul {
@@ -98,26 +104,6 @@ ul{
     max-width: 1700px;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-/* Buttons */
-.btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background: var(--lighter-blue);
-    color: var(--pale-yellow);
-    font-weight: 600;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn:hover {
-    font-weight: 600;
-    color: var(--dark-blue);
-    background: var(--pale-yellow);
 }
 
 /* Text Classes */
