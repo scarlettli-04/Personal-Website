@@ -26,10 +26,6 @@ body {
     overflow: hidden;
 }
 
-img {
-    max-width: 100%;
-}
-
 p {
     color: var(--pale-yellow);
     font-weight: normal;
@@ -49,8 +45,10 @@ ul{
 
 /*---------NAVIGATION BAR---------*/
 .navbar {
-    position: fixed;
-    background: var(--black);
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    background-color: var(--black);
     padding: 5px;
     width: 100%;
 }
@@ -81,7 +79,7 @@ ul{
 
 
 /*---------HOME---------*/
-.home .container-full{
+.home {
     background: 
         linear-gradient(to right, var(--black) 40%, transparent), 
         url('../images/linesofcode-haroldvasquez.jpg');
@@ -124,17 +122,9 @@ ul{
 
 .container {
     max-width: 1700px;
-    margin: 0 auto;
     padding: 0 15px;
 }
 
-.container-full {
-    max-width: 1700px;
-    margin: 0 auto;
-    padding: 0 15px;
-    width: 100%;
-    min-height: 100vh;
-}
 
 
 
