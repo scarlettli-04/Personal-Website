@@ -52,7 +52,6 @@ ul {
     align-items: center;
 }
 
-
 .navbar .main-menu ul {
     display: flex;
     align-items: center;
@@ -72,6 +71,36 @@ ul {
 
 .navbar ul li a i {
     margin-left: 15px;
+}
+
+/*Dropdown for projects list*/
+.navbar .main-menu ul li {
+    position: relative;
+}
+
+.navbar .dropdown-menu {
+    display: none;
+}
+
+.navbar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.navbar .dropdown-menu ul {
+    display: block;
+}
+
+.navbar .dropdown-menu ul:before{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 10px;
+    border-top: 1px solid var(--pale-yellow); 
 }
 
 
@@ -111,7 +140,7 @@ ul {
 
 .about-me .left {
     flex: 3;
-    padding-right: 40px;
+    padding-right: 60px;
 }
 
 .about-me .right  {
@@ -120,7 +149,7 @@ ul {
 
 .about-me .am-group .am-group-header {
     position: relative;
-    padding: 20px 0;
+    cursor: pointer;
 }
 
 .about-me .am-group .am-group-header i {
@@ -128,13 +157,20 @@ ul {
     right: 0;
     top: 25px;
     font-size: 1.5rem;
-    cursor: pointer;
 }
 
 .about-me h2 {
     font-size: 1.8rem;
     line-height: 1.4;
     font-weight: 500;
+    padding: 20px 0;
+}
+
+.about-me h3 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: normal;
+    padding-top: 20px;
 }
 
 .about-me .am-group .am-group-body {
@@ -148,7 +184,7 @@ ul {
 .about-me .profile {
     display: flex;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 .about-me .profile-body {
@@ -167,27 +203,47 @@ ul {
     padding-bottom: 20px;
 }
 
+.about-me .skills-list ul li {
+    display: inline-flex;
+}
+
+.about-me ul li {
+    /*padding-top, padding-right, padding-bottom, padding-left*/
+    margin: 10px 10px 10px 0;
+}
+
+.about-me ul li:last-child {
+    margin-bottom: 30px;
+}
+
 
 
 /*---------UTILITY CLASSES---------*/
 .container {
-    max-width: 100%;
+    max-width: 95%;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .container-full {
     max-width: 95%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 50px 0;
     min-height: 100vh;
 }
 
 .container-sm-full {
     max-width: 75%;
     margin: 0 auto;
-    padding: 0 15px;
     min-height: 100vh;
+}
+
+/*Button*/
+.btn {
+    background: var(--pale-yellow);
+    color: var(--black);
+    border-radius: 50px;
+    padding: 7px 20px;
+    width: fit-content;
 }
 
 /*Text Classes*/
@@ -206,9 +262,9 @@ ul {
 }
 
 .text-lg {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.4;
-    font-weight: 500;
+    font-weight: normal;
     margin: 30px 0 20px;
 }
 

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="shortcut icon" href="images/skittle.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/skittle-removebg-preview.ico" type="image/x-icon"/>
 </head>
 
 <body>
@@ -32,32 +32,33 @@
             <div class="main-menu">
                 <ul>
                     <li>
-                        <a href="index.html">ABOUT ME</a>
+                        <a href="#">ABOUT ME</a>
                     </li>
                     <li>
-                        <a class="dropdown" href="index.html">PROJECTS<i class="fa-solid fa-angles-down"></i></a>
-                        <!--
-                        <ul>
-                            <li>
-                                <a class="btn" href="index.html">BANKING APPLICATION</a>
-                            </li>
-                            <li>
-                                <a class="btn" href="index.html">8-BIT CPU</a>
-                            </li>
-                            <li>
-                                <a class="btn" href="index.html">HOMELAB</a>
-                            </li>
-                            <li>
-                                <a class="btn" href="index.html">PORTFOLIO WEBSITE</a>
-                            </li>
-                            <li>
-                                <a class="btn" href="index.html">TMU MEC COMPETITION 2024</a>
-                            </li>
-                        </ul>
-                        -->
+                        <a href="#">PROJECTS<i class="fa-solid fa-angles-down"></i></a>
+                        <!--project list-->
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">BANKING APPLICATION</a>
+                                </li>
+                                <li>
+                                    <a href="#">8-BIT CPU</a>
+                                </li>
+                                <li>
+                                    <a href="#">HOMELAB</a>
+                                </li>
+                                <li>
+                                    <a href="#">PORTFOLIO WEBSITE</a>
+                                </li>
+                                <li>
+                                    <a href="#">TMU MEC COMPETITION 2024</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <a href="index.html">CONTACT ME</a>
+                        <a href="mailto:scarlettsaur@gmail.com">CONTACT ME</a>
                     </li>
                 </ul>
             </div>
@@ -110,9 +111,9 @@
                         </div>
                     </div>
                     <div class="about-me-description">
-                        <h1 class="text-lg">
+                        <h2>
                             <span style="color:#00ff94;">About me</span>
-                        </h1>
+                        </h2>
                         <p class="text-sm">
                             I am a fourth-year, computer engineering student at TMU and am expected to graduate in 2027. 
                             Some of my favourite hobbies include building model kits, crocheting, and gaming! 
@@ -130,11 +131,13 @@
                             </div>
                             <div class="am-group-body open">
                                 <p class="text-sm">
-                                    Something about teamwork<br>
-                                    MUES - Events Crew<br>
-                                    General Orientation<br>
-                                    FROSH 2025<br>
-                                    MEC Competition 2025 - Outreach Coordinator
+                                    Something about teamwork
+                                    <ul>
+                                        <li class="text-lg">MUES - Events Crew</li>
+                                        <li class="text-lg">General Orientation</li>
+                                        <li class="text-lg">FROSH 2025</li>
+                                        <li class="text-lg">MEC Competition 2025 - Outreach Coordinator</li>
+                                    </ul>
                                 </p>
                             </div>
                         </div>
@@ -153,11 +156,38 @@
                             </div>
                             <div class="am-group-body">
                                 <p class="text-sm">
-                                    Circuit design and analyses<br>
-                                    Excel<br>
-                                    Soldering<br>
-                                    3D printing<br>
-                                    Linux (mint)
+                                    <div class="skills-list">
+                                        <ul>
+                                            <li class="btn">Circuit design and analyses</li>
+                                            <li class="btn">Excel</li>
+                                            <li class="btn">Soldering</li>
+                                            <li class="btn">Linux (mint)</li>
+                                        </ul>
+                                        <h3>Programming languages</h3>
+                                        <ul>
+                                            <li class="btn">C</li>
+                                            <li class="btn">CSS</li>
+                                            <li class="btn">HTML</li>
+                                            <li class="btn">Java</li>
+                                            <li class="btn">JavaScript</li>
+                                            <li class="btn">MATLAB</li>
+                                            <li class="btn">VHDL</li>
+                                        </ul>
+                                        <h3>Lab equipment</h3>
+                                        <ul>
+                                            <li class="btn">multimeter</li>
+                                            <li class="btn">oscilliscope</li>
+                                            <li class="btn">power generator</li>
+                                            <li class="btn">FPGA board</li>
+                                        </ul>
+                                        <h3>Simulation tools</h3>
+                                        <ul>
+                                            <li class="btn">MATLAB</li>
+                                            <li class="btn">Multisim</li>
+                                            <li class="btn">KiCad</li>
+                                            <li class="btn">Quartus II</li>
+                                        </ul>
+                                    </div>
                                 </p>
                             </div>
                         </div>
@@ -171,16 +201,25 @@
                                 <i class="fas fa-angle-down"></i>
                             </div>
                             <div class="am-group-body">
-                                <p class="text-sm">
-                                    WHMIS - 2022<br>
-                                    Dean’s List - Fall 2024<br>
-                                    Dean’s List - Winter 2025
+                                <p>
+                                    <ul>
+                                        <li class="text-lg">WHMIS - 2022</li>
+                                        <li class="text-lg">Dean’s List - Fall 2024</li>
+                                        <li class="text-lg">Dean’s List - Winter 2025</li>
+                                    </ul>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!--PROJECTS PAGE-->
+    <section class="projects">
+        <div class="container-full">
+            <h1 class="text-xxl">Projects List</h1>
         </div>
     </section>
 
