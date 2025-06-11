@@ -41,8 +41,9 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--black);
+    background: rgba(0, 0, 0, 0.85);
     padding: 10px;
+    z-index: 9999;
 }
 
 .navbar .container {
@@ -91,11 +92,12 @@ ul {
 }
 
 .home .home-text {
-    width: 35%;
+    width: 50%;
     margin-bottom: 100px;
 }
 
-.home a {
+.home i {
+    font-size: 2.5rem;
     padding-right: 20px;
 }
 
@@ -116,32 +118,73 @@ ul {
     flex: 1;
 }
 
-.about-me .experience-heading {
-    border-top: 1px solid var(--pale-yellow);
-    padding-top: 20px;
+.about-me .am-group .am-group-header {
+    position: relative;
+    padding: 20px 0;
 }
 
-.about-me .achievements-heading {
-    border-top: 1px solid var(--pale-yellow);
-    padding-top: 20px;
+.about-me .am-group .am-group-header i {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
+
+.about-me h2 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.about-me .am-group .am-group-body {
+    display: none;
+}
+
+.about-me .am-group .am-group-body.open {
+    display: block;
+}
+
+.about-me .profile {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.about-me .profile-body {
+    padding-left: 40px;
+}
+
+.about-me .profile-text {
+    width: 60%;
+}
+
+.about-me .am-header {
+    border-top: 1px solid var(--pale-yellow);
+}
+
+.about-me .about-me-description {
+    padding-bottom: 20px;
+}
+
+
 
 /*---------UTILITY CLASSES---------*/
 .container {
-    max-width: 1600px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 .container-full {
-    max-width: 1600px;
+    max-width: 95%;
     margin: 0 auto;
     padding: 0 15px;
     min-height: 100vh;
 }
 
 .container-sm-full {
-    max-width: 1300px;
+    max-width: 75%;
     margin: 0 auto;
     padding: 0 15px;
     min-height: 100vh;
@@ -165,7 +208,7 @@ ul {
 .text-lg {
     font-size: 1.8rem;
     line-height: 1.4;
-    font-weight: normal;
+    font-weight: 500;
     margin: 30px 0 20px;
 }
 
@@ -177,12 +220,8 @@ ul {
 }
 
 .text-sm {
-    font-size: 1.2rem;
-    line-height: 1.4;
+    font-size: 1rem;
+    line-height: 1.5;
     font-weight: normal;
     margin: 10px 0 5px;
-}
-
-.text-center {
-    text-align: center;
 }
