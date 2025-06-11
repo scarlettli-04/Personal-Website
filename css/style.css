@@ -118,6 +118,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .home .home-text {
@@ -128,6 +129,13 @@ ul {
 .home i {
     font-size: 2.5rem;
     padding-right: 20px;
+}
+
+.home .container-sm-full .scroll-animation {
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+    transform: translateY(120%)
 }
 
 
