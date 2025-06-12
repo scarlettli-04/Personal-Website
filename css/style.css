@@ -26,6 +26,12 @@ body {
     color: var(--pale-yellow);
 }
 
+hr {
+    height: 0; 
+    border: 0; 
+    border-top: 1px solid var(--pale-yellow);
+}
+
 img {
     max-width: 100%;
 }
@@ -170,9 +176,6 @@ ul {
 }
 
 .about-me hr {
-    height: 0; 
-    border: 0; 
-    border-top: 1px solid var(--pale-yellow);
     margin: 20px 0;
 }
 
@@ -199,7 +202,7 @@ ul {
 }
 
 .about-me .about-me-description {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .about-me .skills-list ul li {
