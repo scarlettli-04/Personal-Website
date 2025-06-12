@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -19,7 +20,6 @@ a {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     background: var(--black);
@@ -224,6 +224,52 @@ ul {
 
 
 
+/*FOOTER*/
+/*
+.footer {
+    background-image: radial-gradient(#00ff94 5%, #000000);
+}*/
+
+.footer .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+}
+
+.footer .email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.footer .contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+    background-color: var(--pale-yellow);
+}
+
+.footer .email-form textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.footer .contact-inputs:focus {
+    border: 2px solid var(--mint-green);
+}
+
+.footer .contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+
+
 /*---------UTILITY CLASSES---------*/
 .container {
     max-width: 95%;
@@ -243,7 +289,7 @@ ul {
     min-height: 100vh;
 }
 
-/*Button*/
+/*Buttons*/
 .btn {
     background: var(--pale-yellow);
     color: var(--black);
@@ -252,6 +298,21 @@ ul {
     width: fit-content;
     font-size: 0.9rem;
     font-weight: 300;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(270deg, var(--mint-green), var(--pale-yellow));
+    cursor: pointer;
+}
+
+button i {
+    margin-left: 10px;
 }
 
 /*Text Classes*/
