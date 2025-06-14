@@ -60,13 +60,13 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#section-contact-form">CONTACT ME</a>
+                        <a href="#section-contact-me">CONTACT ME</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    
     <!--HOME PAGE-->
     <section class="home" id="section-home">
         <div class="container-sm-full">
@@ -242,34 +242,63 @@
     </section>
 
     <!--CONTACT PAGE-->
+    <section class="contact-page" id="section-contact-me">
+        <div class="container">
+            <hr>
+            <h1 class="text-xl">Contact me</h1>
+            <div class="contact-page-grid">
+                <div class="contact-page-heading">
+                    <h2 class=".text-md">Let's talk</h2>
+                </div>
+                <div class="form">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="email-form">
+                        <div class="contact-left-title">
+                            <h2>Send me a message!</h2>
+                        </div>
+                        <input type="hidden" name="access_key" value="e252399c-0daa-4f7d-929d-dcc370281f0b">
+                        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                        <button type="submit">Submit<i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--FOOTER-->
     <section class="footer">
         <div class="container">
             <hr>
             <h4>Scarlett Li</h4>
-            <hr>
             <div class="footer-grid">
                 <div class="contact-me">
                     <ul>
                         <li>
                             <a href="#section-home">Home</a>
                         </li>
+                        <li>
+                            <a href="#section-about-me">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#section-projects">Projects</a>
+                        </li>
                     </ul>
-                    <h4>Connect with me</h4>
-                    <!--Social links-->
-                    <div class="home-links">
-                        <a href="https://www.linkedin.com/in/scarlett-li-a052b9251/"> 
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/scarlettli-04"> 
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://www.instagram.com/l.i.scarlett/"> 
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
                 </div>
+                <!--Social links-->
+                <div class="home-links">
+                    <h4>Connect with me</h4>
+                    <a href="https://www.linkedin.com/in/scarlett-li-a052b9251/"> 
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/scarlettli-04"> 
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/l.i.scarlett/"> 
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <!--
                 <div class="form" id="section-contact-form">
                     <form action="https://api.web3forms.com/submit" method="POST" class="email-form">
                         <div class="contact-left-title">
@@ -282,6 +311,7 @@
                         <button type="submit">Submit<i class="fa-solid fa-arrow-up-from-bracket"></i></button>
                     </form>
                 </div>
+                -->
             </div>
         </div>
     </section>

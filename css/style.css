@@ -224,26 +224,27 @@ ul {
 
 
 
-/*FOOTER*/
-/*
-.footer {
-    background-image: radial-gradient(#00ff94 5%, #000000);
-}*/
+/*CONTACT PAGE*/
+.contact-page h2 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
 
-.footer .footer-grid {
+.contact-page .contact-page-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
     grid-column-gap: 40px;
 }
 
-.footer .email-form {
+.contact-page .email-form {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 10px;
 }
 
-.footer .contact-inputs {
+.contact-page .contact-inputs {
     width: 400px;
     height: 50px;
     border: none;
@@ -254,18 +255,32 @@ ul {
     background-color: var(--pale-yellow);
 }
 
-.footer .email-form textarea {
+.contact-page .email-form textarea {
     height: 140px;
     padding-top: 15px;
     border-radius: 20px;
 }
 
-.footer .contact-inputs:focus {
+.contact-page .contact-inputs:focus {
     border: 2px solid var(--mint-green);
 }
 
-.footer .contact-inputs::placeholder {
+.contact-page .contact-inputs::placeholder {
     color: #a9a9a9;
+}
+
+
+
+/*FOOTER*/
+/*
+.footer {
+    background-image: radial-gradient(#00ff94 5%, #000000);
+}*/
+
+.footer .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
 }
 
 
