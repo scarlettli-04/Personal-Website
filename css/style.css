@@ -46,7 +46,7 @@ ul {
 /*---------ANIMATIONS FOR SECTIONS---------*/
 .hidden-animation {
     opacity: 0;
-    /*transform: translateX(-100%);*/
+    filter: blur(2px);
     transition: all 1.5s;
 }
 
@@ -58,7 +58,7 @@ ul {
 
 .show {
     opacity: 1;
-    /*transform: translateX(0);*/
+    filter: blur(0);
 }
 
 
@@ -140,7 +140,7 @@ ul {
     background-position: center center;
     background-size: cover;
     
-    animation: home-image-animation linear forwards;
+    animation: home-image-animation linear;
     animation-timeline: view();
     animation-range: exit;
 }
@@ -254,8 +254,17 @@ ul {
 .projects .project-list {
     display: grid;
     grid-template-columns: 4fr 5fr;
-    grid-template-rows: 1fr 1fr;
     grid-column-gap: 70px;
+    padding: 40px 0;
+}
+
+/*animation for each project*/
+.projects .hidden-animation {
+    transform: translateX(-100%);
+}
+
+.projects .show {
+    transform: translateX(0);
 }
 
 
@@ -348,7 +357,7 @@ ul {
 .container-sm-full {
     max-width: 75%;
     margin: 0 auto;
-    min-height: 100svh;
+    min-height: 100vh;
 }
 
 /*Buttons*/

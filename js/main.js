@@ -1,4 +1,4 @@
-// ABOUT ME dropdown's
+// ABOUT ME DROPDOWN'S
 document.addEventListener('DOMContentLoaded', () => {
     const amContainerleft = document.querySelector('.am-content-left');
     const amContainerright = document.querySelector('.am-content-right');
@@ -45,11 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //PAGE ANIMATIONS
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
+        entry.target.classList.toggle('show', entry.isIntersecting);
     });
 });
 
