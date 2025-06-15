@@ -43,7 +43,7 @@ ul {
 
 
 
-/*ANIMATIONS FOR SECTIONS*/
+/*---------ANIMATIONS FOR SECTIONS---------*/
 .hidden-animation {
     opacity: 0;
     /*transform: translateX(-100%);*/
@@ -60,6 +60,7 @@ ul {
     opacity: 1;
     /*transform: translateX(0);*/
 }
+
 
 
 /*---------NAVIGATION BAR---------*/
@@ -141,7 +142,7 @@ ul {
     
     animation: home-image-animation linear forwards;
     animation-timeline: view();
-    animation-range: exit -5%;
+    animation-range: exit;
 }
 
 .home .container-sm-full {
@@ -149,12 +150,6 @@ ul {
     flex-direction: column;
     justify-content: center;
     position: relative;
-}
-
-.home .home-content {
-    animation: fade-out linear;
-    animation-timeline: view();
-    animation-range: exit;
 }
 
 .home .home-text {
@@ -255,7 +250,17 @@ ul {
 
 
 
-/*CONTACT PAGE*/
+/*---------PROJECT LIST---------*/
+.projects .project-list {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 70px;
+}
+
+
+
+/*---------CONTACT PAGE---------*/
 .contact-page {
     padding: 50px 0;
 }
@@ -306,7 +311,7 @@ ul {
 
 
 
-/*FOOTER*/
+/*---------FOOTER---------*/
 /*
 .footer {
     background-image: radial-gradient(#00ff94 5%, #000000);
@@ -322,13 +327,9 @@ ul {
 
 /*---------UTILITY CLASSES---------*/
 /*Animations*/
-@keyframes fade-out {
-    to { opacity: 0;}
-}
-
 @keyframes home-image-animation {
-    85%, 100% { opacity: 0;
-                scale: 1.1; }
+    70%, 100% { opacity: 0;
+                scale: 1.2; }
 }
 
 /*Containers*/
