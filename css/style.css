@@ -79,7 +79,7 @@ ul {
     align-items: center;
 }
 
-.navbar .main-menu ul {
+.navbar ul {
     display: flex;
     align-items: center;
 }
@@ -92,7 +92,7 @@ ul {
     color: var(--pale-yellow);
 }
 
-.navbar ul li a:hover {
+.navbar .main-menu ul li a:hover {
     color: var(--mint-green);
 }
 
@@ -125,7 +125,7 @@ ul {
     content: "";
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 75%;
     padding-top: 10px;
     border-top: 1px solid var(--pale-yellow); 
 }
