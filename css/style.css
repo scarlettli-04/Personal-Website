@@ -24,6 +24,7 @@ body {
     line-height: 1.5;
     background: var(--black);
     color: var(--pale-yellow);
+    overflow-x: hidden;
 }
 
 hr {
@@ -118,6 +119,10 @@ ul {
         url('../images/linesofcode-haroldvasquez.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
+    
+    animation: home-image-animation linear forwards;
+    animation-timeline: view();
+    animation-range: exit -5%;
 }
 
 .home .container-sm-full {
@@ -125,6 +130,12 @@ ul {
     flex-direction: column;
     justify-content: center;
     position: relative;
+}
+
+.home .home-content {
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit;
 }
 
 .home .home-text {
@@ -141,6 +152,7 @@ ul {
 .home i:hover {
     color: var(--mint-green);
 }
+
 
 
 /*---------ABOUT ME---------*/
@@ -225,6 +237,10 @@ ul {
 
 
 /*CONTACT PAGE*/
+.contact-page {
+    padding: 50px 0;
+}
+
 .contact-page h2 {
     font-size: 1.8rem;
     line-height: 1.4;
@@ -286,6 +302,17 @@ ul {
 
 
 /*---------UTILITY CLASSES---------*/
+/*Animations*/
+@keyframes fade-out {
+    to { opacity: 0;}
+}
+
+@keyframes home-image-animation {
+    85%, 100% { opacity: 0;
+                scale: 1.1; }
+}
+
+/*Containers*/
 .container {
     max-width: 95%;
     margin: 0 auto;
@@ -301,7 +328,7 @@ ul {
 .container-sm-full {
     max-width: 75%;
     margin: 0 auto;
-    min-height: 100vh;
+    min-height: 100svh;
 }
 
 /*Buttons*/
