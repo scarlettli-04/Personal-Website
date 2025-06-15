@@ -350,7 +350,8 @@ ul {
 .container-full {
     max-width: 95%;
     margin: 0 auto;
-    padding: 70px 30px;
+    /*padding-top, padding-right, padding-bottom, padding-left*/
+    padding: 90px 30px 0px 30px;
     min-height: 100vh;
 }
 
