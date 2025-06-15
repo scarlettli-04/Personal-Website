@@ -43,6 +43,25 @@ ul {
 
 
 
+/*ANIMATIONS FOR SECTIONS*/
+.hidden-animation {
+    opacity: 0;
+    /*transform: translateX(-100%);*/
+    transition: all 1.5s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden-animation {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    /*transform: translateX(0);*/
+}
+
+
 /*---------NAVIGATION BAR---------*/
 .navbar {
     position: fixed;
