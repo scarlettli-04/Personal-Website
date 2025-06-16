@@ -254,11 +254,54 @@ ul {
 .projects .project-list {
     display: grid;
     grid-template-columns: 4fr 5fr;
-    grid-column-gap: 70px;
+    grid-column-gap: 50px;
     padding: 40px 0;
 }
 
-/*animation for each project*/
+.projects .project-image {
+    align-self: center;
+    justify-self: center;
+}
+
+.projects h2 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.projects h4 {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.projects h5 {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: 200;
+    margin-top: 25px;
+}
+
+.projects p {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.projects a i {
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+
+.projects .project-description {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    grid-column-gap: 15px;
+    padding: 5px 0;
+}
+
+/*slide-in animation for each project*/
 .projects .hidden-animation {
     transform: translateX(-100%);
 }
@@ -421,4 +464,8 @@ button i {
     line-height: 1.5;
     font-weight: normal;
     margin: 10px 0 5px;
+}
+
+.text-right {
+    text-align: right;
 }
