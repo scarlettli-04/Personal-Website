@@ -258,6 +258,14 @@ ul {
     padding: 40px 0;
 }
 
+/*
+.projects .project-description {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    grid-column-gap: 15px;
+    padding: 5px 0;
+}*/
+
 .projects .project-image {
     align-self: center;
     justify-self: center;
@@ -287,18 +295,12 @@ ul {
     font-size: 1rem;
     line-height: 1.4;
     font-weight: 300;
+    margin-bottom: 10px;
 }
 
 .projects a i {
     margin-left: 5px;
     font-size: 0.8rem;
-}
-
-.projects .project-description {
-    display: grid;
-    grid-template-columns: 1fr 3.5fr;
-    grid-column-gap: 15px;
-    padding: 5px 0;
 }
 
 /*slide-in animation for each project*/
@@ -466,6 +468,7 @@ button i {
     margin: 10px 0 5px;
 }
 
+/*
 .text-right {
     text-align: right;
-}
+}*/
