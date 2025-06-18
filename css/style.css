@@ -37,6 +37,10 @@ img {
     max-width: 100%;
 }
 
+video {
+    max-width: 100%;
+}
+
 ul {
     list-style: none;
 }
@@ -253,14 +257,14 @@ ul {
 /*---------PROJECT LIST---------*/
 .projects .project-list {
     display: grid;
-    grid-template-columns: 4fr 5fr;
-    grid-column-gap: 50px;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 30px;
     padding: 40px 0;
 }
 
 .projects .project-description {
     display: grid;
-    grid-template-columns: 1fr 3.5fr;
+    grid-template-columns: 1fr 4fr;
     grid-column-gap: 15px;
     padding: 5px 0;
 }
@@ -291,7 +295,7 @@ ul {
 }
 
 .projects p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.4;
     font-weight: 300;
 }
@@ -361,6 +365,21 @@ ul {
     color: #a9a9a9;
 }
 
+.contact-page button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(270deg, var(--mint-green), var(--pale-yellow));
+    cursor: pointer;
+}
+
+.contact-page button i {
+    margin-left: 10px;
+}
+
 
 
 /*---------FOOTER---------*/
@@ -413,21 +432,6 @@ ul {
     width: fit-content;
     font-size: 0.9rem;
     font-weight: 300;
-}
-
-button {
-    display: flex;
-    align-items: center;
-    padding: 15px 30px;
-    font-size: 0.9rem;
-    border: none;
-    border-radius: 30px;
-    background: linear-gradient(270deg, var(--mint-green), var(--pale-yellow));
-    cursor: pointer;
-}
-
-button i {
-    margin-left: 10px;
 }
 
 /*Text Classes*/

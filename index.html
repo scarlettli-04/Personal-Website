@@ -13,6 +13,7 @@
     
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="css/style.css" />
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
@@ -239,29 +240,35 @@
             <!--First project-->
             <div class="project-list hidden-animation">
                 <div class="project-image">
-                    <img src="images/project-images/PortfolioSite-image.png">
+                    <video controls>
+                        <source src="images/project-images/simple-bank-application/bank-account-demo.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div>
                     <h2>Simple <span style="color:#00ff94;">bank account</span> application</h2>
                     <div class="project-description">
                         <h4 class="text-right">Purpose:</h4>
-                        <p>Develop a simple Bank Account Application.</p>
+                        <p>Develop a simple bank account application.</p>
                     </div>
                     <div class="project-description">
                         <h4 class="text-right">Requirements:</h4>
                         <p>
                             The application must be a graphical user interface (GUI) based with only one manager that
-                            oversees zero or more customers. Each customer has only one bank account which can be
-                            classified as either silver, gold, or platinum based on the amount within the account.
+                            oversees customers. Each customer has only one bank account which can be classified as 
+                            silver, gold, or platinum based on the amount within the account.
                         </p>
                     </div>
                     <div class="project-description">
                         <h4 class="text-right">Design:</h4>
                         <p>
-                            The application was coded in Java using NetBeans IDE (vr. ?) with JavaFX for the GUI. The 
-                            singleton pattern was applied to the manager class to insure it only has one instance. The 
-                            manager has the ability to add and delete a customer. The customer class 
-                            The state design pattern was applied to the bank account to acheive smt smt.
+                            The application was coded in Java using Apache NetBeans IDE 19 with JavaFX for the GUI. 
+                            The <span style="color:#00ff94;">singleton pattern</span> was applied to the manager 
+                            class to insure it only has one instance. The manager has the ability login, logout, and 
+                            add and delete a customer. The customer class implements the 
+                            <span style="color:#00ff94;">state design pattern</span> so that the type of account is 
+                            changed when the customer makes a change to the account balance. A customer has the ability 
+                            to login, logout, make a deposit, make a withdrawal, view their account balance, and make 
+                            an online purchase.
                         </p>
                     </div>
                     <h5>
@@ -272,6 +279,9 @@
             <!--Second project-->
             <div class="project-list hidden-animation">
                 <div class="project-image">
+                    <div class="carousel">
+                        
+                    </div>
                     <img src="images/project-images/ALU(1).png">
                 </div>
                 <div>
@@ -297,7 +307,7 @@
             <!--Third project-->
             <div class="project-list hidden-animation">
                 <div class="project-image">
-                    <img src="images/project-images/PortfolioSite-image.png">
+                    <img src="images/project-images/MEC DAY.jpg">
                 </div>
                 <div>
                     <h2>MEC 2024: <span style="color:#00ff94;">Consulting engineering</span> competition</h2>
