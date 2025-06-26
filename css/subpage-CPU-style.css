@@ -1,0 +1,48 @@
+/*image carousel*/
+.carousel {
+    position: relative;
+}
+
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.carousel button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 5rem;
+    top: 50%;
+    transform: translateY(140%);
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: black;
+}
+
+.carousel-button:focus {
+    outline: none;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}

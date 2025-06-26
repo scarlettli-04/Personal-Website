@@ -51,3 +51,9 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElement = document.querySelectorAll('.hidden-animation');
 hiddenElement.forEach((el) => observer.observe(el));
+
+
+
+
+//CPU PAGE: CAROUSEL
+const buttons = document.querySelector("[data-carousel-button]")
