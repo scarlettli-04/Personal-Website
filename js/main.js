@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const icon = groupHeader.querySelector('i');
 
         // Toggle icon
-        icon.classList.toggle('fa-angle-up');
-        icon.classList.toggle('fa-angle-down');
+        icon.classList.toggle('fa-plus');
+        icon.classList.toggle('fa-minus');
 
         // Toggle visibility of body text
         groupBody.classList.toggle('open');
@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const icon = groupHeader.querySelector('i');
 
         // Toggle icon
-        icon.classList.toggle('fa-angle-up');
-        icon.classList.toggle('fa-angle-down');
+        icon.classList.toggle('fa-plus');
+        icon.classList.toggle('fa-minus');
 
         // Toggle visibility of body text
         groupBody.classList.toggle('open');
@@ -54,6 +54,3 @@ hiddenElement.forEach((el) => observer.observe(el));
 
 
 
-
-//CPU PAGE: CAROUSEL
-const buttons = document.querySelector("[data-carousel-button]")

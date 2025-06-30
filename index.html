@@ -108,7 +108,7 @@
     </section>
 
     <!--ABOUT ME PAGE-->
-    <section class="about-me hidden-animation" id="section-about-me">
+    <section class="about-me" id="section-about-me">
         <div class="container-full">
             <div class="about-me-grid">
                 <!--Left column (large)-->
@@ -143,16 +143,15 @@
                                 <h2>
                                     Learn about my experience at <span style="color:#00ff94;">TMU</span>
                                 </h2>
-                                <i class="fas fa-angle-down"></i>
+                                <i class="fas fa-plus"></i>
                             </div>
                             <div class="am-group-body">
                                 <p class="text-sm">
-                                    
                                     <ul>
-                                        <li class="text-lg">MUES - Events Crew</li>
-                                        <li class="text-lg">General Orientation</li>
-                                        <li class="text-lg">FROSH 2025</li>
-                                        <li class="text-lg">Metropolitan Engineering Competition (MEC) 2025 - Outreach Coordinator</li>
+                                        <li class="text-md">MUES - Events Crew</li>
+                                        <li class="text-md">General Orientation</li>
+                                        <li class="text-md">FROSH 2025</li>
+                                        <li class="text-md">Metropolitan Engineering Competition (MEC) 2025 - Outreach Coordinator</li>
                                     </ul>
                                 </p>
                             </div>
@@ -168,7 +167,7 @@
                                 <h2>
                                     Technical skills
                                 </h2>
-                                <i class="fas fa-angle-down"></i>
+                                <i class="fas fa-plus"></i>
                             </div>
                             <div class="am-group-body">
                                 <p class="text-sm">
@@ -185,6 +184,7 @@
                                             <li class="btn">CSS</li>
                                             <li class="btn">HTML</li>
                                             <li class="btn">Java</li>
+                                            <li class="btn">JavaFX</li>
                                             <li class="btn">JavaScript</li>
                                             <li class="btn">MATLAB</li>
                                             <li class="btn">VHDL</li>
@@ -215,7 +215,7 @@
                                 <h2>
                                     Achievements and certificates
                                 </h2>
-                                <i class="fas fa-angle-down"></i>
+                                <i class="fas fa-plus"></i>
                             </div>
                             <div class="am-group-body">
                                 <p>
@@ -234,7 +234,7 @@
     </section>
 
     <!--PROJECTS PAGE-->
-    <section class="projects hidden-animation" id="section-projects">
+    <section class="projects" id="section-projects">
         <div class="container-full">
             <h1 class="text-xl"><span style="color:#00ff94;">Project</span> list</h1>
             <!--First project-->
@@ -243,6 +243,12 @@
                     <video controls>
                         <source src="images/project-images/simple-bank-application/bank-account-demo.mp4" type="video/mp4">
                     </video>
+                    <h6 class="text-sm">Highlighted Skills</h6>
+                    <ul>
+                        <li class="btn">Java</li>
+                        <li class="btn">JavaFX</li>
+                        <li class="btn">Application of design patterns</li>
+                    </ul>
                 </div>
                 <div>
                     <h2>Simple <span style="color:#00ff94;">bank account</span> application</h2>
@@ -254,8 +260,8 @@
                         <h4 class="text-right">Requirements:</h4>
                         <p>
                             The application must be a graphical user interface (GUI) based with only one manager that
-                            oversees customers. Each customer has only one bank account which can be classified as 
-                            silver, gold, or platinum based on the amount within the account.
+                            oversees zero or more customers. Each customer has only one bank account which can be 
+                            classified as silver, gold, or platinum based on the amount within the account.
                         </p>
                     </div>
                     <div class="project-description">
@@ -280,24 +286,37 @@
             <div class="project-list hidden-animation">
                 <div class="project-image">
                     <img src="images/project-images/simple-CPU/ALU(1).png">
+                    <h6 class="text-sm">Highlighted Skills</h6>
+                    <ul>
+                        <li class="btn">VHDL</li>
+                        <li class="btn">FPGA board</li>
+                        <li class="btn">Quartus II</li>
+                    </ul>
                 </div>
                 <div>
                     <h2>Simple <span style="color:#00ff94;">central processing unit</span></h2>
                     <div class="project-description">
                         <h4 class="text-right">Purpose:</h4>
-                        <p>Design and implement a simple 8-bit CPU.</p>
+                        <p>Design a simple central processing unit (CPU) and implement it on an FPGA board.</p>
                     </div>
                     <div class="project-description">
                         <h4 class="text-right">Team:</h4>
-                        <p>Partners (2).</p>
+                        <p>Working with another undergraduate engineering student.</p>
                     </div>
                     <div class="project-description">
                         <h4 class="text-right">Requirements:</h4>
-                        <p></p>
+                        <p>
+                            The CPU is comprised of an arithmetic logic unit (ALU) and a control unit. The ALU performs 
+                            a set of arithmetical and logical functions on two 8-bit numbers. The control unit supplies 
+                            an opcode to the ALU which defines the operation. This consists of a finite state machine 
+                            (FSM) and a 3x8 decoder.
+                        </p>
                     </div>
                     <div class="project-description">
                         <h4 class="text-right">Contributions:</h4>
-                        <p></p>
+                        <p>
+                            The CPU was coded in VHDL using Quartus II. 
+                        </p>
                     </div>
                     <h5>
                         <!--<a href="sublinks/simple-CPU.html">See more details<i class="fa-solid fa-angles-right"></i></a>-->
@@ -308,12 +327,18 @@
             <div class="project-list hidden-animation">
                 <div class="project-image">
                     <img src="images/project-images/MEC DAY.jpg">
+                    <h6 class="text-sm">Highlighted Skills</h6>
+                    <ul>
+                        <li class="btn">Problem-solving</li>
+                        <li class="btn">Teamwork</li>
+                        <li class="btn">Research</li>
+                    </ul>
                 </div>
                 <div>
-                    <h2>MEC 2024: <span style="color:#00ff94;">Consulting engineering</span> competition</h2>
+                    <h2>Metroplitan Engineering Competition 2024: <span style="color:#00ff94;">Consulting engineering</span></h2>
                     <div class="project-description">
                         <h4 class="text-right">Purpose:</h4>
-                        <p></p>
+                        <p>Come up with way(s) to improve Toronto's transpotation system.</p>
                     </div>
                     <div class="project-description">
                         <h4 class="text-right">Team:</h4>
@@ -321,7 +346,7 @@
                     </div>
                     <div class="project-description">
                         <h4 class="text-right">Requirements:</h4>
-                        <p></p>
+                        <p>Write a detailed report with a presentation.</p>
                     </div>
                     <div class="project-description">
                         <h4 class="text-right">Contributions:</h4>
@@ -336,6 +361,13 @@
             <div class="project-list hidden-animation">
                 <div class="project-image">
                     <img src="images/project-images/PortfolioSite-image.png">
+                    <h6 class="text-sm">Highlighted Skills</h6>
+                    <ul>
+                        <li class="btn">HTML</li>
+                        <li class="btn">CSS</li>
+                        <li class="btn">JavaScript</li>
+                        <li class="btn">Web design</li>
+                    </ul>
                 </div>
                 <div>
                     <h2>Personal <span style="color:#00ff94;">portfolio</span> website</h2>
@@ -381,7 +413,7 @@
     </section>
 
     <!--CONTACT PAGE-->
-    <section class="contact-page hidden-animation" id="section-contact-me">
+    <section class="contact-page" id="section-contact-me">
         <div class="container">
             <h1 class="text-xl">Contact me</h1>
             <div class="contact-page-grid">

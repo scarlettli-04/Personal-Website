@@ -263,7 +263,7 @@ ul {
 
 .projects .project-description {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 4.5fr;
     grid-column-gap: 15px;
     padding: 5px 0;
 }
@@ -271,6 +271,15 @@ ul {
 .projects .project-image {
     align-self: center;
     justify-self: center;
+}
+
+.projects .project-image ul li {
+    display: inline-flex;
+}
+
+.projects .project-image ul li {
+    /*padding-top, padding-right, padding-bottom, padding-left*/
+    margin: 5px 5px 5px 0;
 }
 
 .projects h2 {
@@ -424,8 +433,7 @@ ul {
 
 /*Buttons*/
 .btn {
-    background: var(--pale-yellow);
-    color: var(--black);
+    background: #373737;
     border-radius: 50px;
     padding: 6px 15px;
     width: fit-content;
