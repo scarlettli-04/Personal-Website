@@ -103,6 +103,10 @@ ul {
     margin-left: 15px;
 }
 
+.navbar img {
+    clip-path: circle(50%);
+}
+
 /*Dropdown for projects list*/
 .navbar .main-menu ul li {
     position: relative;
@@ -157,7 +161,7 @@ ul {
 
 .home .home-text {
     width: 50%;
-    margin-bottom: 100px;
+    margin-bottom: 7%;
 }
 
 .home i {
@@ -216,6 +220,10 @@ ul {
     display: block;
 }
 
+.about-me img {
+    clip-path: circle(50%);
+}
+
 .about-me .profile {
     display: flex;
     align-items: center;
@@ -258,7 +266,11 @@ ul {
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-column-gap: 30px;
-    padding: 40px 0;
+    padding: 10px 0 80px 0;
+}
+
+.projects .project-list:last-child {
+    padding: 0;
 }
 
 .projects .project-description {
@@ -337,7 +349,7 @@ ul {
 
 .contact-page .contact-page-grid {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 40px;
 }
 
