@@ -338,7 +338,7 @@ ul {
 
 /*---------CONTACT PAGE---------*/
 .contact-page {
-    padding: 50px 0;
+    padding: 30px;
 }
 
 .contact-page h2 {
@@ -349,7 +349,7 @@ ul {
 
 .contact-page .contact-page-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-column-gap: 40px;
 }
 
@@ -358,6 +358,7 @@ ul {
     flex-direction: column;
     align-items: start;
     gap: 10px;
+    float: right;
 }
 
 .contact-page .contact-inputs {
