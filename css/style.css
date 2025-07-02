@@ -87,12 +87,16 @@ ul {
     align-items: center;
 }
 
-.navbar ul li a {
+.navbar .main-menu ul li a {
     padding: 10px 20px;
     display: block;
     font-weight: 600px;
     transition: 0.5s;
     color: var(--pale-yellow);
+}
+
+.navbar .logo li {
+    padding: 10px;
 }
 
 .navbar .main-menu ul li a:hover {
@@ -103,8 +107,10 @@ ul {
     margin-left: 15px;
 }
 
-.navbar img {
-    clip-path: circle(50%);
+.navbar .resize {
+    width: 50px;
+    height: 50px;
+    clip-path: circle(50% at center);
 }
 
 /*Dropdown for projects list*/
@@ -353,6 +359,10 @@ ul {
     grid-column-gap: 40px;
 }
 
+.contact-page a {
+    text-decoration: underline;
+}
+
 .contact-page .email-form {
     display: flex;
     flex-direction: column;
@@ -411,7 +421,7 @@ ul {
 
 .footer .footer-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 40px;
 }
 
@@ -435,13 +445,13 @@ ul {
     margin: 0 auto;
     /*padding-top, padding-right, padding-bottom, padding-left*/
     padding: 90px 30px 0px 30px;
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .container-sm-full {
     max-width: 75%;
     margin: 0 auto;
-    height: 100vh;
+    height: 100dvh;
 }
 
 /*Buttons*/
@@ -470,10 +480,11 @@ ul {
 }
 
 .text-lg {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
     line-height: 1.4;
-    font-weight: normal;
-    margin: 30px 0 20px;
+    font-weight: 500;
+    /*padding-top, padding-right, padding-bottom, padding-left*/
+    margin: 0 20px 20px 0;
 }
 
 .text-md {

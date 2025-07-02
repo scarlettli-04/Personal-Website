@@ -43,9 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //PAGE ANIMATIONS
+//Note: only animates in once
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        entry.target.classList.toggle('show', entry.isIntersecting);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
     });
 });
 
