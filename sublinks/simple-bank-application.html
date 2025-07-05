@@ -29,18 +29,21 @@
             <div class="logo">
                 <ul>
                     <li>
-                        <a href="../index.html#section-home">
+                        <a href="#bank-section-home">
                             <img class="resize" src="../images/headshot cropped.jpg">
                         </a>
                     </li>
                     <li>
-                        <a href="../index.html#section-home">SCARLETT LI</a>
+                        <a href="#bank-section-home">SCARLETT LI</a>
                     </li>
                 </ul>
             </div>
             <!--menu options-->
             <div class="main-menu">
                 <ul>
+                    <li>
+                        <a href="../index.html#section-home">HOME</a>
+                    </li>
                     <li>
                         <a href="../index.html#section-about-me">ABOUT ME</a>
                     </li>
@@ -77,13 +80,79 @@
         </div>
     </nav>
 
-    <!--PAGE CONTENT-->
-    <div class="simple-banking-application">
+    <!--HOME PAGE-->
+    <section class="bank-home" id="bank-section-home">
+        <div class="container-sm-full">
+            <div class="bank-home-grid">
+                <div class="title">
+                    <h1 class="text-xxl">
+                        Simple <span style="color:#00ff94;">bank account</span> application
+                    </h1>
+                    <p class="text-md">
+                        Includes the usage of the singleton pattern and state design pattern. Has an implemented graphical user interface.
+                    </p>
+                    <div class="skills">
+                        <ul>
+                            <li class="btn">Java</li>
+                            <li class="btn">JavaFX</li>
+                            <li class="btn">Application of design patterns</li>
+                            <li class="btn">Apache NetBeans IDE 19</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="bank-demo">
+                    <video controls>
+                        <source src="../images/project-images/simple-bank-application/bank-account-demo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Use Case Diagram-->
+    <section>
         <div class="container-full">
-            <h1 class="text-lg">Simple Bank Account Application</h1>
-            
-            <img src="../images/project-images/simple-bank-application/Class Diagram.png">
+            <h1 class="text-xl">Design process</h1>
+            <p>
+                The use case diagram demonstrates the interaction between the manager and a customer to the
+                bank system. The Manager actor is able to login, logout, add a customer, and delete a customer.
+                If the Manager is to add and delete a customer or logout, they must login. Additionally, to add a
+                customer they must make a deposit. The Customer actor is able to login, logout, make a deposit,
+                make a withdrawal, get their balance, and make an online purchase. If the Customer wishes to
+                make a deposit, withdrawal, view their balance, or logout, they must login.
+
+            </p>
             <img src="../images/project-images/simple-bank-application/Use Case Diagram.png">
+        </div>
+    </section>
+
+    <!--Class Diagram-->
+    <section>
+        <div class="container-full">
+            <p>
+                The class diagram describes the banking system. The banking system has a manager and either
+                zero or more customers. A customer has an account that can be of three levels: silver, gold, and
+                platinum. Hence, there is a Manager, Customer, Account, LevelSilver, LevelGold, and
+                LevelPlatinum class. The Manager class follows a singleton pattern as there can only be one
+                manager instance. It has a private constructor and a public static method. When a manager adds a
+                new customer using the addCustomer method, two other methods from the Customer class are
+                class. So, the Manager class depends on the Customer class. The Customer class contains an
+                instance variable account and the method setLevel which uses a type Account, so there is an
+                aggregation relationship between the two classes. The methods deposit, withdraw, and
+                onlinePurchase use methods from the Account class so there is a dependency relationship.
+                Within the Customer class, there is an Overview clause, abstraction function, rep invariant, and
+                necessary clauses for each method. The abstract function is implemented in the toString method
+                and rep invariant is implemented in the repOK method. The classes Account, LevelSilver,
+                LevelGold, and LevelPlatinum form the State design pattern. The Account class is an abstract
+                class which the concrete state classes LevelSilver, LevelGold, and LevelPlatinum inherit from.
+                The concrete state classes override the method changeLevel which is responsible for changing
+                the state(level) of the account within the Customer class. They override the method
+                onlinePurchase which has different functions based on the current state of the customer's
+                account.
+            </p>
+            <img src="../images/project-images/simple-bank-application/Class Diagram.png">
+
             <ul>
                 <li>
                     <a class="text-sm" href="https://github.com/scarlettli-04/Bank-Account-Application">See source code</a>
@@ -92,10 +161,9 @@
                     <a href="../index.html#section-projects">Go back</a>
                 </li>
             </ul>
-            
         </div>
-    </div>
-
+    </section>
+    
     <script src="js/main.js"></script>
 </body>
 </html>

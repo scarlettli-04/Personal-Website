@@ -1,0 +1,32 @@
+/*---------HOME---------*/
+.bank-home .bank-home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+}
+
+.bank-home .container-sm-full {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bank-home .bank-demo {
+    align-self: center;
+    justify-self: center;
+}
+
+.bank-home .skills {
+    padding-top: 50px;
+}
+
+.bank-home .skills ul li {
+    display: inline-flex;
+    font-size: 1rem;
+}
+
+.bank-home .skills ul li {
+    /*padding-top, padding-right, padding-bottom, padding-left*/
+    margin: 5px 5px 5px 0;
+}
+
